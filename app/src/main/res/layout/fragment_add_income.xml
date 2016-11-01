@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.palle.lekha.mywallet.Model.AddIncomeFragment"
+    android:gravity="center"
+    android:layout_alignParentBottom="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txtView_incomeDate"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:gravity="center" />
+            <ImageButton
+                android:id="@+id/btn_date"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/txtView_incomeDate"
+                android:background="@drawable/incomecalender"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtView_incomeDate"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center">
+
+
+        <Spinner
+            android:id="@+id/spnr_incomecategory"
+            android:layout_width="250dp"
+            android:layout_height="50dp">
+        </Spinner>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_addcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@android:drawable/ic_input_add"
+                android:layout_toRightOf="@id/spnr_incomecategory"
+                android:foregroundTint="?attr/colorBackgroundFloating"
+                app:elevation="11dp"
+                app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description">
+            <!-- Wrap edit text here-->
+
+        <EditText
+            android:id="@+id/editxt_incomeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount">
+            <EditText
+                android:id="@+id/editxt_incomeAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/btn_incomeAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add" />
+
+    </LinearLayout>
+</RelativeLayout>
+

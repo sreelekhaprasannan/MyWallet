@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/incomeMaterFragment"
+    android:orientation="vertical"
+    tools:context="com.palle.lekha.mywallet.Model.ViewIncomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_idViewIncome"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="ID"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_DateViewIncome"
+            android:text="DATE"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_CategoryViewIncome"
+            android:text="CATEGORY"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_DescriptionViewIncome"
+            android:text="DESCRIPTION"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_marginRight="5dp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_AmountViewIncome"
+            android:text="AMOUNT"/>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/listview_IncomeView"
+        >
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/textview_TotalIncome"
+            android:text="INCOME TOTAL"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:id="@+id/editText_TotalIncome"
+            />
+    </LinearLayout>
+
+</LinearLayout>

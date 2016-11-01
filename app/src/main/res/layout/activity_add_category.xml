@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_catagory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.palle.lekha.mywallet.Model.CategoryAddActivity">
+
+    <!--<Spinner
+        android:id="@+id/spnr_addCatagory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </Spinner>-->
+    <TextView
+        android:id="@+id/textView_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/editText_addcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_addcategory"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Add"/>
+</LinearLayout>

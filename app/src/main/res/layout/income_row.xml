@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:id="@+id/textview_id_RowIncome"
+        android:textSize="18sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="1"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".9"
+        android:layout_marginRight="5dp"
+        android:textSize="15sp"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_Date_RowIncome"
+        android:text="29/09/16"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_Category_RowIncome"
+        android:text="Salary"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.2"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_Description_RowIncome"
+        android:text="monthly salary"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".8"
+        android:layout_marginRight="5dp"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_Amount_RowIncome"
+        android:text="50000"/>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="WalletTheam" parent="android:Theme.DeviceDefault.Light.NoActionBar">
+                <item name="android:colorBackground">@color/Wallet_Background</item>
+                <item name="android:textColorPrimaryInverse">@color/offWhite</item>
+                <item name="android:colorForeground">@android:color/darker_gray</item>
+                <item name="colorAccent">@color/Green</item>
+                <item name="colorPrimary">@color/brown</item>
+                <item name="android:navigationBarColor">@color/Green</item>
+                <item name="android:textColorPrimary">@color/Blue</item>
+                <item name="android:statusBarColor">?android:attr/colorControlActivated</item>
+        </style>
+</resources>
